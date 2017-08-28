@@ -1,0 +1,16 @@
+.shadow {
+  -webkit-box-shadow: 0em 0.2em 0em inset;
+  -moz-box-shadow: 0em 0.2em 0em inset;
+  box-shadow: 0em 0.2em 0em inset;
+}
+
+div.navigation-spacing {
+	height: 60px;
+}
+.ui .header .book {
+	font-size: 2em;
+}
+
+#delete {
+	display: inline;
+}
