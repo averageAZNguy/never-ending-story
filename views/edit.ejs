@@ -7,6 +7,10 @@
 			<input type="text" name="post[title]" value="<%= posts.title %>">
 		</div>
 		<div class="field">
+			<label>Order</label>
+			<input type="number" name="post[order]" placeholder="Whats the chapter/index number"  min="1" required>
+		</div>
+		<div class="field">
 			<label>Image</label>
 			<input type="text" name="post[image]" value="<%= posts.image %>">
 		</div>

@@ -14,6 +14,20 @@
 				<div class="header item"><i class="book icon"></i></div>
 				<a class="item" href="/">Home</a>
 				<a class="item" href="/blog/new">New Post</a>
+				<a class="item" href="/blog/tableofcontent">Table of Content</a>
+				<a class="item" href="/rest">RESTful table</a>
+				<div class="header item right floated">
+					<% if(!currentUser){ %>
+					<a class="item" href="/login">Login</a>
+					<a class="item " href="/register">Sign Up</a>
+					<%  } else { %>
+					<a class="item" href="#">Signed in as <%=currentUser.username%></a>
+					<a class="item" href="/logout">Logout</a>
+				<% } %>
+				</div>
+				
+				
+				
 			</div>
 		</div>
 		<div class="container navigation-spacing">

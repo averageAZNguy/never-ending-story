@@ -1,0 +1,64 @@
+<% include partials/header %>
+<table class="ui celled table">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Path</th>
+		<th>HTTP Verb</th>
+		<th>Purpose</th>
+		<th>Mongoose Method</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Index</td>
+		<td>/dogs</td>
+		<td>GET</td>
+		<td>List all dogs</td>
+		<td>Dog.find()</td>
+	</tr>
+	<tr class="positive">
+		<td>New</td>
+		<td>/dogs/new</td>
+		<td>GET</td>
+		<td>Show new dog form</td>
+		<td>N/A</td>
+	</tr>
+	<tr class="positive">
+		<td>Create</td>
+		<td>/dogs</td>
+		<td>POST</td>
+		<td>Create a new dog, tden redirect somewhere</td>
+		<td>Dog.findById()</td>
+	</tr>
+	<tr>
+		<td>Show</td>
+		<td>/dogs/:id</td>
+		<td>GET</td>
+		<td>Show info about one specific dog</td>
+		<td>Dog.findById()</td>
+	</tr>
+	<tr class="warning">
+		<td>Edit</td>
+		<td>/dogs/:id/edit</td>
+		<td>GET</td>
+		<td>Show edit form for one dog</td>
+		<td>Dog.findById()</td>
+	</tr>
+	<tr class="warning">
+		<td>Update</td>
+		<td>/dog/:id</td>
+		<td>POST</td>
+		<td>Update particular dog, tden redirect somewhere</td>
+		<td>Dog.findByIdAndUpdate()</td>
+	</tr>
+	<tr class="negative">
+		<td>Destroy</td>
+		<td>/dogs/:id</td>
+		<td>DELETE</td>
+		<td>Delete a particular dog, tden redirect somewhere</td>
+		<td>Dog.findByIdAndRemove()</td>
+	</tr></tbody>
+</table>
+
+<% include partials/footer %>
